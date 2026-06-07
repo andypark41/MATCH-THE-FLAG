@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 북아메리카 국기 맞추기</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚩</text></svg>">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+
+<div class="container">
+
+    <button id="giveUpBtn" onclick="giveUp()">
+        게임 포기
+    </button>
+
+    <h1>북아메리카 국기 맞추기</h1>
+
+    <div id="info"></div>
+
+    <div id="timer">
+        남은 시간: 10초
+    </div>
+
+    <img id="flag" src="" alt="국기">
+
+    <div>
+        <input
+            id="answer"
+            placeholder="국가 이름 입력"
+            autocomplete="off"
+        >
+
+        <button
+            id="checkBtn"
+            onclick="checkAnswer()"
+        >
+            확인
+        </button>
+    </div>
+
+    <div id="result"></div>
+
+    <button
+        id="nextBtn"
+        onclick="nextQuestion()"
+        style="display:none;"
+    >
+        다음 문제
+    </button>
+
+</div>
+
+<script src="../js/north-america.js"></script>
+
+</body>
+</html>

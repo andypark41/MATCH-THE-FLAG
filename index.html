@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATCH THE FLAG</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚩</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button class="theme-toggle" id="themeToggle">DARK MODE</button>
+
+<div class="sky">
+
+  <div class="stars">
+    <div class="star s1"></div>
+    <div class="star s2"></div>
+    <div class="star s3"></div>
+    <div class="star s4"></div>
+    <div class="star s5"></div>
+    <div class="star s6"></div>
+  </div>
+
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+  <div class="cloud cloud5"></div>
+
+  <div class="title-box">
+    <div class="theme-icon sun"></div>
+    <h1>MATCH THE FLAG!</h1>
+  </div>
+
+  <div class="menu-buttons">
+    <button class="menu-btn">PLAY</button>
+    <button class="menu-btn" id="ruleBtn">RULE</button>
+  </div>
+
+<div class="game_select" id="gameSelect">
+
+  <button class="home-btn" id="homeBtn">
+    홈 화면으로 돌아가기
+  </button>
+
+<div class="continent-grid">
+
+  <div class="continent-box" id="europeBtn">
+    <div class="continent-name">유럽</div>
+    <div class="continent-count">50개국</div>
+    <div class="difficulty difficulty-4">★★★★☆</div>
+    <div class="continent-desc">비슷한 국기가 많아 구분이 어렵습니다.</div>
+  </div>
+
+  <div class="continent-box" id="asiaBtn">
+      <div class="continent-name">아시아</div>
+      <div class="continent-count">48개국</div>
+      <div class="difficulty difficulty-3">★★★☆☆</div>
+      <div class="continent-desc">
+          익숙한 국가가 많아 비교적 접근하기 쉽습니다.
+      </div>
+  </div>
+
+  <div class="continent-box" id="africaBtn">
+    <div class="continent-name">아프리카</div>
+    <div class="continent-count">54개국</div>
+    <div class="difficulty difficulty-5">★★★★★</div>
+    <div class="continent-desc">국가 수가 가장 많고 비슷한 국기가 많습니다.</div>
+  </div>
+
+  <div class="continent-box" id="northAmericaBtn">
+    <div class="continent-name">북아메리카</div>
+    <div class="continent-count">23개국</div>
+    <div class="difficulty difficulty-2">★★☆☆☆</div>
+    <div class="continent-desc">국가 수가 적어 입문용으로 적합합니다.</div>
+  </div>
+
+  <div class="continent-box" id="southAmericaBtn">
+    <div class="continent-name">남아메리카</div>
+    <div class="continent-count">12개국</div>
+    <div class="difficulty difficulty-1">★☆☆☆☆</div>
+    <div class="continent-desc">국가 수가 적어 가장 도전하기 쉽습니다.</div>
+  </div>
+
+  <div class="continent-box" id="oceaniaBtn">
+    <div class="continent-name">오세아니아</div>
+    <div class="continent-count">14개국</div>
+    <div class="difficulty difficulty-2">★★☆☆☆</div>
+    <div class="continent-desc">영국계 국기가 많아 헷갈릴 수 있습니다.</div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="rule-box" id="ruleBox">
+
+  <button id="closeBtn">➜</button>
+
+  <div class="rule-tabs">
+    <button class="tab-btn active" data-tab="tab1">게임 규칙 및 정보</button>
+    <button class="tab-btn" data-tab="tab2">게임 플레이 방법</button>
+  </div>
+
+  <h2 class="rule-title" id="ruleTitle">게임 규칙 및 정보</h2>
+
+	<div class="rule-content active" id="tab1">
+    <p>1. [PLAY] 버튼을 눌러 대륙 선택 화면으로 이동합니다.</p>
+    <p>2. 원하는 대륙을 선택하여 국기 맞추기 게임을 시작합니다.</p>
+    <p>3. 국가 이름, 국가 약칭 또는 국가 코드를 입력하여 정답을 맞힙니다.</p>
+    <p>4. 각 문제는 10초의 제한 시간이 주어집니다.</p>
+    <p>5. [DARK/LIGHT MODE] 버튼으로 테마를 변경할 수 있습니다.</p>
+    <p>6. [홈으로] 버튼을 눌러 언제든지 메인 화면으로 돌아갈 수 있습니다.</p>
+    <p>7. 게임 종료 후 최종 점수와 정답률을 확인할 수 있습니다.</p>
+    <p>8. 모든 국가는 국제연합(UN) 회원국 기준으로 구성되어 있습니다.</p>
+    <p>9. PC 플레이를 권장합니다.</p>
+	</div>
+
+	<div class="rule-content" id="tab2">
+  <p>1. [PLAY] 버튼을 눌러 대륙 선택 화면으로 이동합니다.</p>
+  <p>2. 원하는 대륙을 선택하여 게임을 시작합니다.</p>
+  <p>3. 국기를 보고 국가 이름, 국가 약칭 또는 국가 코드를 입력합니다.</p>
+  <p>4. Enter 또는 [확인] 버튼을 눌러 정답을 제출합니다.</p>
+  <p>5. 각 문제는 10초의 제한 시간이 주어집니다.</p>
+  <p>6. 정답 제출 또는 시간 초과 후 다음 문제가 자동으로 진행됩니다.</p>
+  <p>7. 모든 문제를 완료하면 최종 점수와 정답률을 확인할 수 있습니다.</p>
+  <p>8. [다시하기]로 게임을 재시작하거나 [홈으로]를 눌러 메인 화면으로 돌아갈 수 있습니다.</p>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

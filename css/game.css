@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #74ebd5,
+            #9face6
+        );
+
+    font-family:
+        "Segoe UI",
+        sans-serif;
+}
+
+.container{
+    width:800px;
+    max-width:90vw;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.2);
+
+    position:relative;
+}
+
+h1{
+    margin-top:0;
+    font-size:40px;
+}
+
+#giveUpBtn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    border:none;
+    border-radius:15px;
+
+    padding:12px 20px;
+
+    background:#ff5f57;
+    color:white;
+    font-weight:bold;
+}
+
+#info{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+#timer{
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#flag{
+    width:380px;
+    max-width:100%;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.15);
+}
+
+input{
+    width:320px;
+
+    padding:14px;
+
+    border-radius:12px;
+    border:2px solid #ddd;
+
+    font-size:18px;
+}
+
+button{
+    padding:14px 22px;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+#checkBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+#nextBtn{
+    background:#2196F3;
+    color:white;
+}
+
+#result{
+    min-height:40px;
+
+    margin-top:20px;
+
+    font-size:24px;
+    font-weight:bold;
+}
